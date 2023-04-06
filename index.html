@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <title>Kalkulator Matematik</title>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Katik</h1>
+      <p class="subHeader">
+        Hai Sobat!, Selamat datang di Katik :) Sebuah web apps sederhana yang
+        berfungsi untuk menghitung luas dan keliling bangun datar
+      </p>
+      <ul>
+        <li>
+          <a href="#triangle">Segitiga</a>
+        </li>
+        <li>
+          <a href="#jajar_genjang">Jajar Genjang</a>
+        </li>
+      </ul>
+    </header>
+    <div id="triangle" class="triangle">
+      <div class="luas_segitiga">
+        <h1>Luas Segitiga</h1>
+        <img src="assets/triangle.jpg" alt="" />
+        <h6>Rumus Luas Segitiga yaitu :</h6>
+        <h5>L = 1/2 x a x t</h5>
+        <div class="triangle_desc">
+          <p>Dimana :</p>
+          <p>L = Luas</p>
+          <p>a = Panjang Alas</p>
+          <p>t = Tinggi</p>
+        </div>
+        <hr />
+        <h1>Hitung Luas Segitiga</h1>
+        <input type="text" id="alas" name="alas" placeholder="Nilai Alas" />
+        <input
+          type="text"
+          id="tinggi"
+          name="tinggi"
+          placeholder="Nilai Tinggi"
+        />
+        <input type="text" id="luas" name="luas" placeholder="Luas" disabled />
+        <input type="button" value="Hitung" onclick="{hitungluas()}" />
+        <input type="button" value="Reset" onclick="{reset()}" />
+      </div>
+      <div class="keliling_segitiga">
+        <h1>Keliling Segitiga</h1>
+        <img src="assets/triangle.jpg" alt="" />
+        <h6>Rumus Keliling Segitiga yaitu :</h6>
+        <h5>K = S1 + S2 + S3</h5>
+        <p>Dimana :</p>
+        <p>K = Keliling</p>
+        <p>S1 = Sisi A</p>
+        <p>S2 = Sisi B</p>
+        <p>S3 = Sisi C</p>
+        <hr />
+        <h1>Hitung Keliling Segitiga</h1>
+        <input type="text" id="sisiA" name="sisiA" placeholder="Nilai Sisi A" />
+        <input type="text" id="sisiB" name="sisiB" placeholder="Nilai Sisi B" />
+        <input type="text" id="sisiC" name="sisiC" placeholder="Nilai Sisi C" />
+        <input
+          type="text"
+          id="keliling"
+          name="sisiC"
+          placeholder="Nilai Keliling"
+          disabled
+        />
+        <input type="button" value="Hitung" onclick="{hitungKeliling()}" />
+        <input type="button" value="Reset" onclick="{reset()}" />
+      </div>
+    </div>
+    <div id="jajar_genjang" class="jajar_genjang">
+      <div class="luas_jajar_genjang">
+        <h1>Luas Jajar Genjang</h1>
+        <img src="assets/jjg.png" alt="" />
+        <h6>Rumus Luas Jajar Genjang yaitu :</h6>
+        <h5>L = a x t</h5>
+        <div class="triangle_desc">
+          <p>Dimana :</p>
+          <p>L = Luas</p>
+          <p>a = Panjang Alas</p>
+          <p>t = Tinggi</p>
+        </div>
+        <hr />
+        <h1>Hitung Luas Jajar Genjang</h1>
+        <input type="text" id="alasJG" name="alas" placeholder="Nilai Alas" />
+        <input
+          type="text"
+          id="tinggiJG"
+          name="tinggi"
+          placeholder="Nilai Tinggi"
+        />
+        <input
+          type="text"
+          id="luasJG"
+          name="luas"
+          placeholder="Luas"
+          disabled
+        />
+        <input type="button" value="Hitung" onclick="{hitungluasJG()}" />
+        <input type="button" value="Reset" onclick="{reset()}" />
+      </div>
+      <div class="keliling_jajar_genjang">
+        <h1>Keliling Jajar Genjang</h1>
+        <img src="assets/jjg.png" alt="" />
+        <h6>Rumus Keliling Jajar Genjang yaitu :</h6>
+        <h5>K = 2 x (P + L)</h5>
+        <p>Dimana :</p>
+        <p>K = Keliling</p>
+        <p>P = Panjang</p>
+        <p>L = Lebar</p>
+        <hr />
+        <h1>Hitung Keliling Jajar Genjang</h1>
+        <input
+          type="text"
+          id="panjang"
+          name="sisiA"
+          placeholder="Nilai Panjang"
+        />
+        <input type="text" id="lebar" name="sisiB" placeholder="Nilai Lebar" />
+        <input
+          type="text"
+          id="kelilingJG"
+          placeholder="Nilai Keliling"
+          disabled
+        />
+        <input type="button" value="Hitung" onclick="{hitungKeliling()}" />
+        <input type="button" value="Reset" onclick="{reset()}" />
+      </div>
+    </div>
+    <footer>Copyright@2023</footer>
+  </body>
+  <script src="js/index.js" type="text/javascript"></script>
+</html>

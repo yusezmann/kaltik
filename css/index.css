@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 10px;
+  padding: 0;
+}
+
+header h1,
+ul {
+  text-align: center;
+}
+
+header ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+header ul li {
+  /* background-color: #1026e6; */
+  padding: 15px;
+  cursor: pointer;
+}
+
+header ul li a {
+  text-decoration: none;
+  padding: 15px;
+  cursor: pointer;
+}
+header ul li:hover {
+  background-color: #1026e6;
+  color: #fff;
+}
+
+header ul li a:hover {
+  color: #fff;
+}
+header ul li:active {
+  background-color: #1026e6;
+}
+
+.subHeader {
+  text-align: center;
+}
+
+.triangle {
+  /* border: 1px solid #eee; */
+}
+
+.triangle h1 {
+  text-align: center;
+  background-color: #13d9e9;
+  color: #fff;
+  padding: 20px;
+  padding-top: -2rem;
+}
+
+.triangle img,
+h5 {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.triangle_dec {
+  text-align: left;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  margin-bottom: 10px;
+}
+
+input[type="button"] {
+  width: 100px;
+  float: center;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  margin-bottom: 10px;
+}
+
+.jajar_genjang {
+  margin-bottom: 5rem;
+}
+
+.jajar_genjang h1 {
+  text-align: center;
+  background-color: #13d9e9;
+  color: #fff;
+  padding: 20px;
+  padding-top: -2rem;
+}
+
+.jajar_genjang img,
+h5 {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+
+.jajar_genjang_dec {
+  text-align: left;
+}
+
+footer {
+  position: fixed;
+  margin-top: 5rem;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border: 2px solid #eee;
+  background-color: #13d9e9;
+  color: #fff;
+  text-align: center;
+}
